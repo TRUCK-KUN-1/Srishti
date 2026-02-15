@@ -1,0 +1,145 @@
+.eco-cta.refined {
+  background-color: var(--light);
+  padding: 120px 8%;
+  font-family: "Inter", sans-serif;
+}
+
+/* LAYOUT */
+.eco-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT CONTENT */
+.eco-container {
+  max-width: 700px;
+}
+
+/* RIGHT IMAGE */
+.eco-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.eco-visual img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* Badge */
+.eco-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: rgba(132, 204, 43, 0.15);
+  color: var(--dark);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+/* Heading */
+.eco-container h1 {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.eco-container h1 span {
+  color: var(--mid);
+}
+
+/* Text */
+.eco-container p {
+  font-size: 18px;
+  color: var(--dark);
+  /* opacity: 0.75; */
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+/* Divider */
+.eco-divider {
+  width: 80px;
+  height: 4px;
+  background-color: var(--mid);
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+/* Info Row */
+.refined-info {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.eco-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.eco-item .dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  background-color: var(--mid);
+  border-radius: 50%;
+}
+
+.eco-item small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--dark);
+  /* opacity: 0.7; */
+  margin-bottom: 4px;
+}
+
+.eco-item strong {
+  font-size: 16px;
+  color: var(--dark);
+}
+
+/* Button */
+.refined-btn {
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: 50px;
+  background-color: var(--mid);
+  color: var(--dark);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.refined-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(132, 204, 43, 0.35);
+}
+  /* ===== MOBILE ===== */
+  @media (max-width: 900px) {
+  .eco-layout {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .eco-container h1 {
+    font-size: 42px;
+  }
+
+  .eco-visual {
+    margin-top: 50px;
+  }
+
+}
